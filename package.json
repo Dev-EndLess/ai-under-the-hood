@@ -1,0 +1,29 @@
+{
+  "name": "ai-fundamentals",
+  "version": "1.0.0",
+  "description": "Reference didattica low-level per AI Engineering fundamentals",
+  "type": "module",
+  "scripts": {
+    "01:basic": "tsx 01-llm-core/01-messages-and-roles/01-basic-call.ts",
+    "01:system": "tsx 01-llm-core/01-messages-and-roles/02-system-prompt.ts",
+    "02:stream-raw": "tsx 01-llm-core/02-streaming/01-stream-raw.ts",
+    "02:stream-helpers": "tsx 01-llm-core/02-streaming/02-stream-helpers.ts",
+    "03:json-mode": "tsx 01-llm-core/03-structured-output/01-json-mode.ts",
+    "03:json-schema": "tsx 01-llm-core/03-structured-output/02-json-schema.ts",
+    "04:count-tokens": "tsx 01-llm-core/04-token-cost-estimation/01-count-tokens.ts",
+    "04:estimate-cost": "tsx 01-llm-core/04-token-cost-estimation/02-estimate-cost.ts",
+    "05:temp": "tsx 01-llm-core/05-hyperparameters/01-temp-top-p.ts",
+    "06:tool": "tsx 01-llm-core/06-tool-use/01-web-search-tool.ts",
+    "06:web-search": "tsx 01-llm-core/06-tool-use/01-web-search-tool.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "tiktoken": "^1.0.21",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

@@ -50,3 +50,7 @@ Non è una singola stringa — è una conversazione strutturata dove ogni messag
 1. **L'LLM è stateless** — non ricorda nulla tra le chiamate. Sei tu a mandare l'intera cronologia ogni volta.
 2. **L'ordine conta** — il system prompt va per primo, poi i messaggi in ordine cronologico.
 3. **Il modello "vede" tutto** — system + user + assistant precedenti. Più messaggi mandi, più token consumi.
+
+## 📖 Docs
+
+- [Text Generation Guide](https://platform.openai.com/docs/guides/text-generation)

@@ -11,7 +11,9 @@ Se chiedi "dammi un JSON", a volte il modello ci aggiunge testo prima/dopo, o ca
 ### 1. JSON Mode (il modo "vecchio")
 
 ```typescript
-response_format: { type: "json_object" }
+response_format: {
+  type: "json_object";
+}
 ```
 
 - ✅ Garantisce che l'output sia JSON valido
@@ -60,6 +62,7 @@ const result = await generateObject({
 ```
 
 Sotto il cofano, l'SDK:
+
 1. Converte lo schema Zod in JSON Schema
 2. Lo manda come `response_format.json_schema`
 3. Parsa e valida la response
@@ -70,3 +73,7 @@ Nei file di questa sezione facciamo i passaggi 2 e 3 **a mano**.
 
 - **01-json-mode.ts** — `response_format: { type: "json_object" }` — il modo base.
 - **02-json-schema.ts** — `response_format: { type: "json_schema" }` — lo schema vincolante.
+
+## 📖 Docs
+
+- [Structured Outputs Guide](https://platform.openai.com/docs/guides/structured-outputs)

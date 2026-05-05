@@ -13,8 +13,7 @@
     "04:count-tokens": "tsx 01-llm-core/04-token-cost-estimation/01-count-tokens.ts",
     "04:estimate-cost": "tsx 01-llm-core/04-token-cost-estimation/02-estimate-cost.ts",
     "05:temp": "tsx 01-llm-core/05-hyperparameters/01-temp-top-p.ts",
-    "06:tool": "tsx 01-llm-core/06-tool-use/01-web-search-tool.ts",
-    "06:web-search": "tsx 01-llm-core/06-tool-use/01-web-search-tool.ts"
+    "06:function-calling": "tsx 01-llm-core/06-tool-use/01-function-calling.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

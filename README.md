@@ -17,9 +17,17 @@ ai-under-the-hood/vorrei
 │   ├── 05-hyperparameters/        // Temperature e Top P: controllare la creatività
 │   └── 06-tool-use/               // Il cuore degli Agenti: Function Calling
 │
-├── 02-agentic-patterns/           // (Work in progress...)
-│   ├── 01-tool-loops/             // Loop manuali: check tool call → execute → reinject
-│   └── 02-react-pattern/          // Thought → Action → Observation
+├── 02-agentic-patterns/           // Strategie e Architetture per Agenti
+│   ├── 01-react-manual-agent/     // --- APPROCCIO MANUALE ---
+│   │   ├── 01-react-prompting.ts  // Prompt: Thought → Action → Observation
+│   │   ├── 02-action-functions.ts // Definizione delle funzioni reali
+│   │   ├── 03-manual-parsing.ts   // Regex e Logica di estrazione comandi
+│   │   └── 04-the-agent-loop.ts   // Ciclo while: esecuzione ricorsiva
+│   │
+│   └── 02-native-function-agent/  // --- APPROCCIO NATIVO ---
+│       ├── 01-tool-call-logic.ts  // Gestione tool_calls e argomenti JSON
+│       ├── 02-state-management.ts // Pushing messages: assistant vs tool roles
+│       └── 03-automatic-runner.ts // Agent Runner automatizzato (mappa funzioni)
 │
 ├── 03-rag-fundamentals/           // (Work in progress...)
 │   ├── 01-embeddings/             // Trasformare testo in vettori

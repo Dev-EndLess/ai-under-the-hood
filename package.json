@@ -4,16 +4,20 @@
   "description": "Reference didattica low-level per AI Engineering fundamentals",
   "type": "module",
   "scripts": {
-    "01:basic": "tsx 01-llm-core/01-messages-and-roles/01-basic-call.ts",
-    "01:system": "tsx 01-llm-core/01-messages-and-roles/02-system-prompt.ts",
+    "01:basic-call": "tsx 01-llm-core/01-messages-and-roles/01-basic-call.ts",
+    "01:system-prompt": "tsx 01-llm-core/01-messages-and-roles/02-system-prompt.ts",
     "02:stream-raw": "tsx 01-llm-core/02-streaming/01-stream-raw.ts",
     "02:stream-helpers": "tsx 01-llm-core/02-streaming/02-stream-helpers.ts",
     "03:json-mode": "tsx 01-llm-core/03-structured-output/01-json-mode.ts",
     "03:json-schema": "tsx 01-llm-core/03-structured-output/02-json-schema.ts",
     "04:count-tokens": "tsx 01-llm-core/04-token-cost-estimation/01-count-tokens.ts",
     "04:estimate-cost": "tsx 01-llm-core/04-token-cost-estimation/02-estimate-cost.ts",
-    "05:temp": "tsx 01-llm-core/05-hyperparameters/01-temp-top-p.ts",
-    "06:function-calling": "tsx 01-llm-core/06-tool-use/01-function-calling.ts"
+    "05:temp-top-p": "tsx 01-llm-core/05-hyperparameters/01-temp-top-p.ts",
+    "06:function-calling": "tsx 01-llm-core/06-tool-use/01-function-calling.ts",
+    "-----":"-----",
+    "01:react-prompting": "tsx 02-agentic-patterns/01-react-manual-agent/01-react-prompting.ts",
+    "01:the-react-loop": "tsx 02-agentic-patterns/01-react-manual-agent/04-the-agent-loop.ts",
+    "02:tool-call-logic": "tsx 02-agentic-patterns/02-native-function-agent/01-tool-call-logic.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

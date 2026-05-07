@@ -14,14 +14,19 @@
     "04:estimate-cost": "tsx 01-llm-core/04-token-cost-estimation/02-estimate-cost.ts",
     "05:temp-top-p": "tsx 01-llm-core/05-hyperparameters/01-temp-top-p.ts",
     "06:function-calling": "tsx 01-llm-core/06-tool-use/01-function-calling.ts",
-    "-----":"-----",
+    "--": "--",
     "01:react-prompting": "tsx 02-agentic-patterns/01-react-manual-agent/01-react-prompting.ts",
     "01:the-react-loop": "tsx 02-agentic-patterns/01-react-manual-agent/04-the-agent-loop.ts",
     "02:tool-call-logic": "tsx 02-agentic-patterns/02-native-function-agent/01-tool-call-logic.ts",
     "02:state-management": "tsx 02-agentic-patterns/02-native-function-agent/02-state-management.ts",
-    "02:automatic-runner": "tsx 02-agentic-patterns/02-native-function-agent/03-automatic-runner.ts"
+    "02:automatic-runner": "tsx 02-agentic-patterns/02-native-function-agent/03-automatic-runner.ts",
+    "---": "---",
+    "03:embeddings-basics": "tsx 03-rag-(retrieval-augmented-generation)/01-embeddings-basics.ts",
+    "03:text-splitting": "tsx 03-rag-(retrieval-augmented-generation)/02-text-splitting.ts",
+    "03:rag-full": "tsx 03-rag-(retrieval-augmented-generation)/03-store-and-search.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.3",
     "dotenv": "^16.4.7",
     "tiktoken": "^1.0.21",
     "zod": "^3.24.2"

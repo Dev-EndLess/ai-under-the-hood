@@ -10,7 +10,7 @@ Invece di parsare il testo con le Regex, useremo il parametro `tools` nell'API. 
 2. **Efficienza**: L'AI consuma meno token per spiegare cosa vuole fare.
 3. **Parallelismo**: L'AI può chiedere di eseguire più funzioni contemporaneamente (es. "Cerca il meteo di 3 città diverse").
 
-## 📂 Struttura dei Lab
+## 📂 Struttura dei Labs
 
 ### [01-tool-call-logic.ts](01-tool-call-logic.ts)
 

@@ -62,6 +62,9 @@ Client                                       Server (OpenAI)
 - **01-stream-raw.ts** — Parsing manuale del ReadableStream, linea per linea.
 - **02-stream-helpers.ts** — Funzioni riutilizzabili + async generator pattern.
 
+> [!NOTE]
+> **Technical Splitting vs Semantic Splitting**: Nello streaming (questo modulo), lo "splitting" è tecnico: serve a non far crashare il parser quando i dati arrivano a pezzi. Nel RAG (Modulo 03), lo splitting è semantico: serve a mantenere il senso logico per l'AI.
+
 ## Perché è importante
 
 Quando usi `streamText()` di Vercel AI SDK, sotto fa **esattamente** il parsing manuale che vedi in `01-stream-raw.ts`. L'SDK ti dà un'API pulita, ma sotto c'è un `ReadableStream` con `TextDecoder` che parsa linee SSE.

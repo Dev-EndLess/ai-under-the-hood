@@ -14,7 +14,7 @@ L'agente non risponde subito all'utente. Segue un ciclo iterativo di pensiero e 
 4. **Observation** (Osservazione): Noi eseguiamo il codice JS e diamo il risultato all'AI.
 5. **Final Answer**: Una volta ottenuti i dati necessari, l'AI risponde all'utente.
 
-## 📂 Struttura dei Lab
+## 📂 Struttura dei Labs
 
 ### [01-react-prompting.ts](01-react-prompting.ts)
 

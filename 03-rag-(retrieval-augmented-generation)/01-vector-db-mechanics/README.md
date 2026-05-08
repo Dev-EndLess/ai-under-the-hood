@@ -35,10 +35,22 @@ La logica del **Chunking**: dividere i documenti in pezzi di dimensioni fisse ce
 
 Il flusso completo end-to-end. Carichiamo documenti reali su Supabase e implementiamo la funzione di ricerca semantica.
 
+---
+
+## 🔗 Risorse di Approfondimento
+
+- **OpenAI Embeddings**: [Guida ufficiale ai vettori](https://platform.openai.com/docs/guides/embeddings)
+- **Pinecone Chunking**: [Strategie avanzate di splitting e overlap](https://www.pinecone.io/learn/chunking-strategies/)
+- **OpenAI Retrieval**: [Best practice per l'indicizzazione e il chunking](https://developers.openai.com/api/docs/guides/retrieval#chunking)
+- **OpenAI RAG Optimization**: [Strategie per migliorare la precisione del recupero](https://platform.openai.com/docs/guides/optimizing-llm-accuracy#retrieval-augmented-generation-rag)
+
+---
+
 ## 🚀 Esecuzione
 
 ```bash
 npm run 01:embeddings-basics
 npm run 01:text-splitting
+npm run 01:chunk-overlap
 npm run 01:store-and-search-full-rag
 ```

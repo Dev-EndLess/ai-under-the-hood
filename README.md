@@ -29,12 +29,26 @@ ai-under-the-hood/vorrei
 │       ├── 02-state-management.ts // Pushing messages: assistant vs tool roles
 │       └── 03-automatic-runner.ts // Agent Runner automatizzato (mappa funzioni)
 │
-├── 03-rag-fundamentals/           // (Work in progress...)
-│   ├── 01-embeddings/             // Trasformare testo in vettori
-│   └── 02-vector-search/          // Similarity search e context injection
+├── 03-rag-(retrieval-augmented-generation)/ // La memoria esterna dei modelli
+│   ├── 01-vector-db-mechanics/     // --- MECCANISMI MANUALI ---
+│   │   ├── 00-vector-db-setup.sql  // Setup pgvector e tabelle su Supabase
+│   │   ├── 01-embeddings-basics.ts // Vettori e Similarità
+│   │   ├── 02-text-splitting.ts    // Logica di Chunking manuale
+│   │   ├── 03-chunk-overlap.ts     // Chunking avanzato con sovrapposizione
+│   │   └── 04-store-and-search.ts  // Flusso RAG completo: Ingestion + Search
+│   │
+│   └─── 00-images/                 // Diagrammi e chartflows
 │
-└── 04-context-engineering/        // (Work in progress...)
-    └── 01-sliding-window/         // Gestione intelligente del context window
+├── 04-vercel-ai-sdk/           // --- IL MODO PROFESSIONALE ---
+│   ├── 01-basics-generate.ts   // Chiamate semplici e Streaming
+│   ├── 02-structured-output.ts // JSON garantito con Zod
+│   ├── 03-sdk-tool-calling.ts  // Agenti automatici (maxSteps)
+│   └── 04-sdk-embeddings.ts    // Batching e RAG con SDK
+│
+└── 05-advanced-patterns/       // Orchestrazione Avanzata
+    ├── 01-retrieval-routing.ts // Router intelligente per database diversi
+    ├── 02-web-search-agent.ts  // AI con accesso ad internet reale
+    └── 03-hybrid-agent.ts      // Mix: RAG Locale + Web Search
 ```
 
 ## 🚀 Come iniziare

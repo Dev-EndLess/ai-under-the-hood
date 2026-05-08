@@ -21,12 +21,24 @@
     "02:state-management": "tsx 02-agentic-patterns/02-native-function-agent/02-state-management.ts",
     "02:automatic-runner": "tsx 02-agentic-patterns/02-native-function-agent/03-automatic-runner.ts",
     "---": "---",
-    "03:embeddings-basics": "tsx 03-rag-(retrieval-augmented-generation)/01-embeddings-basics.ts",
-    "03:text-splitting": "tsx 03-rag-(retrieval-augmented-generation)/02-text-splitting.ts",
-    "03:rag-full": "tsx 03-rag-(retrieval-augmented-generation)/03-store-and-search.ts"
+    "01:embeddings-basics": "tsx 03-rag-(retrieval-augmented-generation)/01-vector-db-mechanics/01-embeddings-basics.ts",
+    "02:text-splitting": "tsx 03-rag-(retrieval-augmented-generation)/01-vector-db-mechanics/02-text-splitting.ts",
+    "03:chunk-overlap": "tsx 03-rag-(retrieval-augmented-generation)/01-vector-db-mechanics/03-chunk-overlap.ts",
+    "04:store-and-search-full-rag": "tsx 03-rag-(retrieval-augmented-generation)/01-vector-db-mechanics/04-store-and-search.ts",
+    "----": "----",
+    "01:sdk-basics-generate": "tsx 04-vercel-ai-sdk/01-basics-generate.ts",
+    "02:sdk-structured": "tsx 04-vercel-ai-sdk/02-structured-output.ts",
+    "03:sdk-tools": "tsx 04-vercel-ai-sdk/03-sdk-tool-calling.ts",
+    "04:sdk-embeddings": "tsx 04-vercel-ai-sdk/04-sdk-embeddings.ts",
+    "-----": "-----",
+    "01:retrieval-routing": "tsx 04-advanced-patterns/01-retrieval-routing.ts",
+    "02:web-search": "tsx 04-advanced-agentic-patterns/02-web-search-agent.ts",
+    "03:hybrid-agent": "tsx 04-advanced-agentic-patterns/03-hybrid-search-agent.ts"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.62",
     "@supabase/supabase-js": "^2.105.3",
+    "ai": "^6.0.175",
     "dotenv": "^16.4.7",
     "tiktoken": "^1.0.21",
     "zod": "^3.24.2"

@@ -10,7 +10,7 @@ function simpleSplit(text: string, chunkSize: number) {
   let i = 0;
 
   while (i < text.length) {
-    // Cerchiamo di tagliare dove c'è uno spazio per non rompere le parole
+    // Tagliamo dove c'è uno spazio per non rompere le parole
     let end = i + chunkSize;
     if (end < text.length) {
       const nextSpace = text.lastIndexOf(" ", end);
@@ -34,10 +34,12 @@ Il RAG (Retrieval-Augmented Generation) è una tecnica che permette all'AI di co
 Questo processo si divide in tre fasi: indicizzazione, recupero e generazione.
 `;
 
+const chuckSize = 100
+
 async function main() {
   console.log("✂️  Esempio di Text Splitting...\n");
 
-  const chunks = simpleSplit(longText, 100); // Pezzi piccoli da 100 caratteri
+  const chunks = simpleSplit(longText, chuckSize); // Pezzi piccoli da 100 caratteri
 
   chunks.forEach((chunk, index) => {
     console.log(`Chunk ${index + 1}: [${chunk.length} caratteri]`);

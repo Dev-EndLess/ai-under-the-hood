@@ -24,10 +24,14 @@ Cosa sono gli **Embeddings**. Usiamo OpenAI per trasformare le parole in liste d
 
 La logica del **Chunking**: dividere i documenti in pezzi di dimensioni fisse cercando di non tagliare le parole o le frasi a metà.
 
+### [03-chunk-overlap.ts](03-chunk-overlap.ts)
+
+**Advanced Chunking**: Implementiamo la tecnica dell'**Overlap**. Facciamo in modo che ogni pezzo di testo contenga una parte del pezzo precedente, così da non perdere mai il contesto semantico ai confini dei chunk.
+
 > [!NOTE]
 > **Semantic Splitting vs Technical Splitting**: Qui lo "splitting" serve a preservare il significato per l'AI. È diverso dallo splitting tecnico visto nella sezione Streaming, dove serviva solo a gestire i buffer di rete.
 
-### [03-store-and-search.ts](03-store-and-search.ts)
+### [04-store-and-search.ts](04-store-and-search.ts)
 
 Il flusso completo end-to-end. Carichiamo documenti reali su Supabase e implementiamo la funzione di ricerca semantica.
 

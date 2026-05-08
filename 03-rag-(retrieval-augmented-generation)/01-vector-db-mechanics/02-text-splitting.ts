@@ -34,7 +34,7 @@ Il RAG (Retrieval-Augmented Generation) è una tecnica che permette all'AI di co
 Questo processo si divide in tre fasi: indicizzazione, recupero e generazione.
 `;
 
-const chuckSize = 100
+const chuckSize = 100;
 
 async function main() {
   console.log("✂️  Esempio di Text Splitting...\n");

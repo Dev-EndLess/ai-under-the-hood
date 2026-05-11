@@ -39,11 +39,11 @@ ai-under-the-hood/vorrei
 │   │
 │   └─── 00-images/                 // Diagrammi e chartflows
 │
-├── 04-vercel-ai-sdk/           // --- IL MODO PROFESSIONALE ---
+├── 04-vercel-ai-sdk/           // --- IL MODO PIÙ' PRATICO, VELOCE E USATO ---
 │   ├── 01-basics-generate.ts   // Chiamate semplici e Streaming
-│   ├── 02-structured-output.ts // JSON garantito con Zod
-│   ├── 03-sdk-tool-calling.ts  // Agenti automatici (maxSteps)
-│   └── 04-sdk-embeddings.ts    // Batching e RAG con SDK
+│   ├── 02-structured-output.ts // JSON sicuro con Zod
+│   ├── 03-sdk-tools-callings.ts  // Agenti automatici (maxSteps/stopWhen)
+│   └── 04-sdk-embeddings-retrieval.ts    // Batching e RAG con SDK
 │
 └── 05-advanced-patterns/       // Orchestrazione Avanzata
     ├── 01-retrieval-routing.ts // Router intelligente per database diversi

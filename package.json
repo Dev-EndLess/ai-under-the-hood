@@ -31,9 +31,9 @@
     "03:sdk-tools-callings": "tsx 04-vercel-ai-sdk/03-sdk-tool-calling.ts",
     "04:sdk-embeddings-retrieval": "tsx 04-vercel-ai-sdk/04-sdk-embeddings.ts",
     "-----": "-----",
-    "01:retrieval-routing": "tsx 04-advanced-patterns/01-retrieval-routing.ts",
-    "02:web-search": "tsx 04-advanced-agentic-patterns/02-web-search-agent.ts",
-    "03:hybrid-agent": "tsx 04-advanced-agentic-patterns/03-hybrid-search-agent.ts"
+    "01:retrieval-routing": "tsx 05-advanced-agentic-patterns/01-retrieval-routing.ts",
+    "02:web-search-agent": "tsx 05-advanced-agentic-patterns/02-web-search-agent.ts",
+    "03:hybrid-search-agent": "tsx 05-advanced-agentic-patterns/03-hybrid-search-agent.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.62",

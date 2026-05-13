@@ -33,7 +33,17 @@
     "-----": "-----",
     "01:retrieval-routing": "tsx 05-advanced-agentic-patterns/01-retrieval-routing.ts",
     "02:web-search-agent": "tsx 05-advanced-agentic-patterns/02-web-search-agent.ts",
-    "03:hybrid-search-agent": "tsx 05-advanced-agentic-patterns/03-hybrid-search-agent.ts"
+    "03:hybrid-search-agent": "tsx 05-advanced-agentic-patterns/03-hybrid-search-agent.ts",
+    "------": "------",
+    "01:openrouter-multi-model": "tsx 06-context-engineering/01-openrouter-multi-model.ts",
+    "02:few-shot-engineering": "tsx 06-context-engineering/02-few-shot-engineering.ts",
+    "03:context-compression": "tsx 06-context-engineering/03-context-compression.ts",
+    "04:persistence-memory": "tsx 06-context-engineering/04-persistent-memory.ts",
+    "-------": "-------",
+    "01:mcp-client": "tsx 07-mcp-(model-context-protocol)/01-mcp-client-setup.ts",
+    "02:mcp-tools": "tsx 07-mcp-(model-context-protocol)/02-mcp-tools-orchestration.ts",
+    "03:mcp-server": "tsx 07-mcp-(model-context-protocol)/03-custom-mcp-server.ts",
+    "04:mcp-agent": "tsx 07-mcp-(model-context-protocol)/04-mcp-full-agent.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.62",

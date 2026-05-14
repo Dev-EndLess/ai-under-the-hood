@@ -6,7 +6,7 @@ In questa repository cerco di documentare quello che avviene dentro un LLM o Age
 
 ## 🏗️ Struttura del Progetto
 
-```ts
+```csharp
 ai-under-the-hood/
 │
 ├── 01-llm-core/                   // I Fondamentali

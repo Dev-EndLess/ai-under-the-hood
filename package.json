@@ -40,13 +40,14 @@
     "03:context-compression": "tsx 06-context-engineering/03-context-compression.ts",
     "04:persistence-memory": "tsx 06-context-engineering/04-persistent-memory.ts",
     "-------": "-------",
-    "01:mcp-client": "tsx 07-mcp-(model-context-protocol)/01-mcp-client-setup.ts",
-    "02:mcp-tools": "tsx 07-mcp-(model-context-protocol)/02-mcp-tools-orchestration.ts",
-    "03:mcp-server": "tsx 07-mcp-(model-context-protocol)/03-custom-mcp-server.ts",
-    "04:mcp-agent": "tsx 07-mcp-(model-context-protocol)/04-mcp-full-agent.ts"
+    "01:mcp-client-setup": "tsx 07-mcp-(model-context-protocol)/01-mcp-client-setup.ts",
+    "02:mcp-server-setup": "tsx 07-mcp-(model-context-protocol)/02-mcp-server-setup.ts",
+    "03:mcp-tools-orchestration": "tsx 07-mcp-(model-context-protocol)/03-mcp-tools-orchestration.ts",
+    "04:mcp-full-agent": "tsx 07-mcp-(model-context-protocol)/04-mcp-full-agent.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.62",
+    "@modelcontextprotocol/sdk": "^1.27.1",
     "@supabase/supabase-js": "^2.105.3",
     "ai": "^6.0.175",
     "dotenv": "^16.4.7",

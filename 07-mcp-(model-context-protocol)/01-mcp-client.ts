@@ -17,7 +17,7 @@ async function main() {
    */
   const transport = new StdioClientTransport({
     command: "npx",
-    args: ["tsx", "./07-mcp-(model-context-protocol)/00-demo-mcp-server.ts"],
+    args: ["tsx", "./07-mcp-(model-context-protocol)/02-mcp-server.ts"],
   });
 
   const client = new Client(

@@ -22,7 +22,7 @@ async function fetchChatStream(prompt: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages: [{ role: "user", content: prompt }],
       stream: true,
     }),

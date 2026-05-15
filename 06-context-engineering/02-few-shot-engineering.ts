@@ -52,7 +52,7 @@ async function runComparison(query: string) {
 
   // --- ZERO-SHOT (Senza esempi) ---
   const zeroShot = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: technicalPrompt,
     prompt: query,
   });

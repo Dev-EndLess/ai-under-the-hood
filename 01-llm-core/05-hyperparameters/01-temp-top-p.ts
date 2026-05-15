@@ -27,7 +27,7 @@ async function askWithTemp(prompt: string, temp: number, topP: number) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages: [{ role: "user", content: prompt }],
       temperature: temp,
       top_p: topP,

@@ -56,7 +56,7 @@ async function main() {
     },
     body: JSON.stringify({
       // gpt-4o-mini: economico e veloce, perfetto per imparare
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages,
     }),
   });

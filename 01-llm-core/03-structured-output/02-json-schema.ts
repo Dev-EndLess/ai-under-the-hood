@@ -109,7 +109,7 @@ async function main() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages: [
         {
           role: "system",
@@ -181,7 +181,7 @@ async function main() {
   import { z } from "zod";
 
   const { object } = await generateObject({
-    model: openai("gpt-4o-mini"),
+      model: process.env.AI_MODEL,
     schema: z.object({
       name: z.string(),
       cuisine: z.string(),

@@ -52,7 +52,7 @@ async function main() {
   // E' possibile alternare tra diversi modelli
   // Possiamo scegliere il modello giusto in base al carico di contesto
   const modelsList = [
-    "openai/gpt-4o-mini",          // Economico, finestra media
+    `openai/${process.env.AI_MODEL}`,          // Economico, finestra media
     "anthropic/claude-3-haiku",    // Veloce, ottima gestione contesto
     "anthropic/claude-opus-4.7",  // Il modello più grande con over 1M di token di contesto
   ];

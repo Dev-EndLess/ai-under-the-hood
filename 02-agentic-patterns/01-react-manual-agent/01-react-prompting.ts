@@ -48,7 +48,7 @@ async function testPrompt() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
         { role: "user", content: "Quanto fa (25 * 4) + 10 e che tempo fa a Milano?" }

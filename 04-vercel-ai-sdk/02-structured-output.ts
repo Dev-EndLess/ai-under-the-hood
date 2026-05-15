@@ -35,7 +35,7 @@ async function main() {
   const spaghettiPrompt = "Genera una ricetta per la pasta al pomodoro (spaghetti).";
 
   const { output } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     output: Output.object({ schema: recipeSchema }),
     prompt: lasagnaPrompt,
   });

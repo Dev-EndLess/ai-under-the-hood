@@ -55,7 +55,7 @@ async function runSupervisoryAgent(tools: any) {
   console.log("\n🤖 L'Agente Multi-Server sta ragionando...");
 
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: `
       Sei un supervisore tecnico e commerciale. 
       Hai accesso a tool locali (ora), server MCP (sconti) e ricerche esterne (github).

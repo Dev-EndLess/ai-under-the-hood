@@ -71,7 +71,7 @@ async function main() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages,
       tools, // Passiamo i tool disponibili
       tool_choice: "auto",
@@ -111,7 +111,7 @@ async function main() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "gpt-4o-mini",
+          model: process.env.AI_MODEL,
           messages,
         }),
       });

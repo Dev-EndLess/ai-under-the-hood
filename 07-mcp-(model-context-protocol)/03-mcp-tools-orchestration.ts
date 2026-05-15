@@ -26,7 +26,7 @@ async function runSalesAssistant(tools: any) {
   const userPrompt = "Un cliente vuole comprare una giacca da 150€. È un membro fedeltà. Qual è il prezzo finale?";
   
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: systemPrompt,
     prompt: userPrompt,
     tools: tools,

@@ -35,7 +35,7 @@ async function runHybridAgent(userQuery: string) {
     `;
 
   const { text, steps } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     stopWhen: stepCountIs(5),
     system: systemPrompt,
     prompt: userQuery,

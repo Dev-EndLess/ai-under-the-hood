@@ -112,7 +112,7 @@ async function generateUpdatedSummary(
     "Sei un esperto di gestione memoria. Il tuo compito è aggiornare la 'Memoria a Lungo Termine'. Unisci il vecchio riassunto con i nuovi fatti salienti (es. preferenze, nomi, interessi). Sii conciso.";
 
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: systemPrompt,
     prompt: `
       VECCHIO RIASSUNTO: ${oldSummary || "Nessuno"}
@@ -153,7 +153,7 @@ async function main() {
 
   // 3. Risposta dell'AI (Usa la memoria ricaricata)
   const { text: aiResponse } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: buildSystemPrompt(oldSummary),
     prompt: currentMessage,
   });

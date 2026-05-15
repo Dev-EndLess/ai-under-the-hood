@@ -23,7 +23,7 @@ async function main() {
   const userPrompt = "Vorrei comprare un Laptop Asus e un Mouse da Gaming. Sono disponibili? Quanto costano in totale?"
 
   const { text, steps } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     stopWhen: stepCountIs(5), // Il "motore" del loop automatico!
     system: systemPrompt,
     prompt: userPrompt,

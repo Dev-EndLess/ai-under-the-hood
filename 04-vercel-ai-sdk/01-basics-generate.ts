@@ -15,7 +15,7 @@ async function main() {
   // 1. Chiamata Semplice (Non-streaming)
   console.log("--- Chiamata Standard ---");
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     prompt: "Prendi per il culo i framework frontend moderni e l'ecosistema assurdo che si è venuto a creare.",
   });
   console.log(`🤖 AI: ${text}\n`);
@@ -23,7 +23,7 @@ async function main() {
   // 2. Chiamata in Streaming
   console.log("--- Chiamata in Streaming ---");
   const { textStream } = streamText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     prompt: "Scrivi un breve saggio (2 paragrafi) sul futuro degli agenti AI.",
   });
 

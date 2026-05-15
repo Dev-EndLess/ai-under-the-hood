@@ -25,7 +25,7 @@ async function summarizeHistory(messages: ModelMessage[]): Promise<string> {
     "Sei un assistente che riassume conversazioni. Crea un riassunto brevissimo (massimo 2 frasi) di ciò che è stato detto finora, mantenendo i fatti salienti.";
 
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: systemPrompt,
 
     messages: messages,
@@ -60,7 +60,7 @@ async function main() {
 
   // --- RISPOSTA FINALE ---
   const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
+    model: openai(process.env.AI_MODEL!),
     system: systemPrompt,
     messages: activeMessages,
   });

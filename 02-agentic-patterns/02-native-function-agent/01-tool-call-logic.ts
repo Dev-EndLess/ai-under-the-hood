@@ -44,7 +44,7 @@ async function main(promptQuestion: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4o-mini",
+      model: process.env.AI_MODEL,
       messages: [{ role: "user", content: promptQuestion }],
       tools,
       tool_choice: "auto",

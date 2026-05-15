@@ -101,7 +101,7 @@ async function startAgent(prompt: string) {
         Authorization: `Bearer ${OPENAI_API_KEY}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ model: "gpt-4o-mini", messages, tools }),
+      body: JSON.stringify({ model: process.env.AI_MODEL, messages, tools }),
     });
 
     const data = await response.json();

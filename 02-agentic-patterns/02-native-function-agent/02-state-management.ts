@@ -73,7 +73,7 @@ async function main() {
   const res1 = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: { Authorization: `Bearer ${OPENAI_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ model: "gpt-4o-mini", messages, tools })
+    body: JSON.stringify({ model: process.env.AI_MODEL, messages, tools })
   });
 
   const data1 = await responseToJson(res1);
@@ -101,7 +101,7 @@ async function main() {
     const res2 = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: { Authorization: `Bearer ${OPENAI_API_KEY}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ model: "gpt-4o-mini", messages })
+      body: JSON.stringify({ model: process.env.AI_MODEL, messages })
     });
 
     const data2 = await responseToJson(res2);

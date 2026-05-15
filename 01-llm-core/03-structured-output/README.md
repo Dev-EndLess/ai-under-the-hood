@@ -57,7 +57,7 @@ const result = await generateObject({
     name: z.string(),
     ingredients: z.array(z.string()),
   }),
-  prompt: "Dammi una ricetta per la carbonara",
+  prompt: "Dammi una ricetta per la pasta con il pesto",
 });
 ```
 

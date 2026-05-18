@@ -2,7 +2,8 @@
 
 > **Reference low-level per AI Engineering Fundamentals.**
 
-In questa repository cerco di documentare quello che avviene dentro un LLM o Agente senza usare un SDK di alto livello. Qui **apriamo il cofano** per capire come funzionano davvero gli ingranaggi che muovono librerie come Vercel AI SDK, LangChain o OpenRouter.
+In questa repository cerco di documentare quello che avviene dentro un LLM o Agente senza usare un SDK di alto livello. 
+Qui **apriamo il cofano** per capire come funzionano gli ingranaggi che muovono librerie come Vercel AI SDK, LangChain o OpenRouter.
 
 ## 🏗️ Struttura del Progetto
 
@@ -85,5 +86,4 @@ ai-under-the-hood/
 ## 📚 Documentazione di riferimento
 
 - [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
-- [DeepLearning.ai - AI Engineering](https://www.deeplearning.ai/)
-- [Vercel AI SDK Docs](https://sdk.vercel.ai/docs) (per capire cosa stiamo emulando)
+- [Vercel AI SDK Docs](https://sdk.vercel.ai/docs)
